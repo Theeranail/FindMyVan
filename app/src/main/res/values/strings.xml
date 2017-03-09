@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FindmyVan</string>
+    <string name="title_activity_main">ค้นหารถตู้</string>
+    <string name="action_settings">ออกจากระบบ</string>
+    <string name="title_activity_register">สมัครสมามิก</string>
+    <string name="title_activity_login_activiry">เข้าสู่ระบบ</string>
+
+    <string name="google_api_key">AIzaSyAu7QVePesB46KTJqfLKSA1JQ4zQWPf5CA</string>
+    <string name="google_api_key_direction">AIzaSyADhgZNzP4jn99JgQax_ahRv2JsZ5ooPhM</string>
+    <string name="title_activity_detailvan">รายละเอียด</string>
+</resources>

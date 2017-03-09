@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        card_view:cardBackgroundColor="@color/White">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="156dp">
+
+            <ImageView
+                android:id="@+id/img_detail"
+                android:layout_width="@dimen/img_show_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/img_show_marginRight"
+                android:src="@drawable/test"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:id="@+id/textview_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/img_detail"
+                android:text="เส้นทาง : อนุสาวรีย์ชัยสมรภูมิ(เซนจูรี่)-เกาะช้าง"
+                android:textColor="@color/colorfont"
+                android:textSize="@dimen/fonsizeM" />
+
+            <TextView
+                android:id="@+id/textview_driver"
+                android:layout_width="@dimen/widtextAddressmain"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_route"
+                android:layout_toRightOf="@+id/img_detail"
+                android:text="ชื่อคนขับ : นาย ทองดี มั่งคั่ง"
+                android:textColor="@color/colorfont"
+                android:textSize="@dimen/fonsizeM"  />
+
+            <TextView
+                android:id="@+id/tetxtview_tel"
+                android:layout_width="@dimen/widtextAddressmain"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_driver"
+                android:layout_marginTop="@dimen/ontent_distane_marginTop"
+                android:layout_toRightOf="@+id/img_detail"
+                android:gravity="left"
+                android:text="เบอร์โทร : 0946606824"
+                android:textColor="@color/colorfont"
+                android:textSize="@dimen/fonsizeM" />
+
+            <TextView
+                android:id="@+id/textview_LicensePlate"
+                android:layout_width="@dimen/widtextAddressmain"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tetxtview_tel"
+                android:layout_marginTop="@dimen/ontent_distane_marginTop"
+                android:layout_toRightOf="@+id/img_detail"
+                android:gravity="left"
+                android:text="ป้ายทะเบียน : ท-4321"
+                android:textColor="@color/colorfont"
+                android:textSize="@dimen/fonsizeM" />
+
+            <TextView
+                android:id="@+id/textview_price"
+                android:layout_width="@dimen/widtextAddressmain"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_LicensePlate"
+                android:layout_marginTop="@dimen/ontent_distane_marginTop"
+                android:layout_toRightOf="@+id/img_detail"
+                android:gravity="left"
+                android:text="ราคาโดยสาร : 120 บาท"
+                android:textColor="@color/colorfont"
+                android:textSize="@dimen/fonsizeM" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

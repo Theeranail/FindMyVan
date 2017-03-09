@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:id="@+id/content_input_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/inputSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint=" พิมชื่อบริเวรหรือเส้นทางที่จะไป"
+            android:inputType="text"
+            android:ellipsize="end"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorfont"
+            android:textSize="@dimen/fonsizeL"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"/>
+
+        <ListView
+            android:id="@+id/list_view_historysearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputSearch"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#FAFAFA"
+            />
+
+        <TextView
+            android:id="@+id/textShowsubserch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_view_historysearch"
+            android:text="  ค้นหาตาม..."
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <ListView
+            android:id="@+id/list_item_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textShowsubserch" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contentcenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_input_search"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/fonsizeN"
+            android:textColor="@color/colorfont"
+            android:text="ไม่มีข้อมูล"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/content_listview_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentcenter">
+
+        <ListView
+            android:id="@+id/list_view_showSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
